@@ -1,0 +1,269 @@
+/*   
+Theme Name: Roux
+Theme URI: http://lynda.com
+Description: A custom WordPress theme, built from the ground-up
+Author: Andrew 
+Template: custom
+Version: 1.00
+*/
+
+@import url('../custom/style.css');
+/*Font declarations*/
+@font-face {
+	font-family: 'Bitter';
+	src: url('_fonts/Bitter-Regular-webfont.eot');
+	src: url('_fonts/Bitter-Regular-webfont.eot?#iefix') format('embedded-opentype'),  url('_fonts/Bitter-Regular-webfont.woff') format('woff'),  url('_fonts/Bitter-Regular-webfont.ttf') format('truetype'),  url('_fonts/Bitter-Regular-webfont.svg#BitterRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Bitter';
+	src: url('_fonts/Bitter-Italic-webfont.eot');
+	src: url('_fonts/Bitter-Italic-webfont.eot?#iefix') format('embedded-opentype'),  url('_fonts/Bitter-Italic-webfont.woff') format('woff'),  url('_fonts/Bitter-Italic-webfont.ttf') format('truetype'),  url('_fonts/Bitter-Italic-webfont.svg#BitterItalic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Bitter';
+	src: url('_fonts/Bitter-Bold-webfont.eot');
+	src: url('_fonts/Bitter-Bold-webfont.eot?#iefix') format('embedded-opentype'),  url('_fonts/Bitter-Bold-webfont.woff') format('woff'),  url('_fonts/Bitter-Bold-webfont.ttf') format('truetype'),  url('_fonts/Bitter-Bold-webfont.svg#BitterBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DroidSans';
+	src: url('_fonts/DroidSans-webfont.eot');
+	src: url('_fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),  url('_fonts/DroidSans-webfont.woff') format('woff'),  url('_fonts/DroidSans-webfont.ttf') format('truetype'),  url('_fonts/DroidSans-webfont.svg#DroidSansRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DroidSans';
+	src: url('_fonts/DroidSans-Bold-webfont.eot');
+	src: url('_fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),  url('_fonts/DroidSans-Bold-webfont.woff') format('woff'),  url('_fonts/DroidSans-Bold-webfont.ttf') format('truetype'),  url('_fonts/DroidSans-Bold-webfont.svg#DroidSansBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+body {
+	background: rgb(65, 64, 66);
+	font: 100% DroidSans, Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	font-weight: normal;
+	font-style: normal;
+}
+#outerWrapper {
+	width: 960px;
+	padding: 0;
+	position: relative;
+}
+.blogHeader {
+	height: 192px;
+	background: url(_images/blog_header01.jpg) no-repeat;
+}
+header {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+#contentWrap {
+	background: url(_images/blog_content_bg.png) repeat-y left top;
+	width: 960px;
+	overflow: hidden;
+}
+#content {
+	float: left;
+	/* [disabled]background: white;
+*/
+	width: 607px;
+	margin-top: 3px;
+	padding: 16px;
+}
+.widget-area {
+	float: right;
+	width: 318px;
+}
+#content h1 {
+	font-family: Bitter, Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 2.8em;
+	color: rgb(168, 88, 163);
+	margin-bottom: .5em;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+article a {
+	color: rgb(2, 99, 174);
+}
+article a:hover {
+	color: rgb(251, 174, 44);
+}
+/*Header styles*/
+.pageHeader h1 {
+	width: 160px;
+	height: 150px;
+	text-indent: -9000em;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: black url(_images/ralogo.png) no-repeat;
+	z-index: 5;
+	margin: 0;
+}
+.pageHeader h1 a {
+	display: block;
+	width: 160px;
+	height: 150px;
+	margin: 0;
+}
+/*Nav styles*/
+.pageHeader nav {
+	background: rgba(35, 31, 32, .8);
+	height: 45px;
+	width: 800px;
+	position: absolute;
+	top: 0px;
+	left: 160px;
+}
+.pageHeader ul {
+	list-style: none;
+	margin-left: 32px;
+}
+.pageHeader li {
+	float: left;
+	margin-right: 55px;
+}
+.pageHeader a {
+	color: white;
+	text-decoration: none;
+	line-height: 45px;
+	font-size: .9em;
+	text-transform: lowercase;
+}
+.pageHeader a:hover {
+	color: rgb(251, 174, 44);
+	background: none;
+}
+/* Sidebar */
+.widget-area aside h3 {
+	color: white;
+	background: url(_images/diag_pattern.png);
+	line-height: 45px;
+	padding-left: .6em;
+	font-family: Bitter, Georgia, Times, "Times New Roman", serif;
+	font-size: 1.6em;
+	font-weight: 100;
+}
+.widget-area aside ul {
+	margin: 1em 1.2em 1em;
+	padding-left: 0.6em;
+}
+.widget-area aside ul li {
+	list-style: square;
+	margin-bottom: 0px;
+	color: #fff;
+}
+.widget-area .widget {
+	padding-bottom: 30px;
+}
+.widget-area aside a {
+	display: block;
+}
+.widget-area aside a:link, .widget-area aside a:visited {
+	background: #A858A3;
+	color: #FFF;
+}
+.widget-area aside a:hover, .widget-area aside a:active {
+	background: url(_images/diag_pattern.png);
+	color: #FBAE2C;
+}
+label.screen-reader-text {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+input#s {
+	border: none;
+	background-color: rgb(249, 228, 130);
+	padding: 0.5em;
+	font-size: 1em;
+	width: 226px !important;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+#searchform input[type="submit"] {
+	background: url(_images/search.png) no-repeat center center;
+	border: none;
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+	padding: 0;
+	margin-top: -10px;
+	vertical-align: bottom;
+}
+
+/*footer styles	*/
+footer#pageFooter {
+	background: rgb(249, 228, 130);
+	color: rgb(65, 64, 66);
+	padding: 32px 0 16px;
+	border-top: none;
+	text-align: left;
+	font-size: 100%;
+	
+}
+footer h3 {
+	font-family: Bitter, Georgia, Times, "Times New Roman", serif;
+	text-transform: uppercase;
+	font-size: 1em;
+	text-align: center;
+	margin-bottom: 1em;
+	font-weight: normal;
+}
+footer p {
+	font-size: .7em;
+	text-align: center;
+	clear: both;
+}
+footer p a{
+	color: rgb(65, 64, 66);
+	text-decoration: underline;
+}
+footer ul a{
+	color: rgb(65, 64, 66);
+}
+footer a:hover {
+	color: rgb(2, 99, 174);
+}
+footer .col {
+	float: left;
+	width: 286px;
+	border-right: 2px solid rgba(191, 191, 191, .8);
+	margin-bottom: 1em;
+	padding-left: 32px;
+}
+footer .col:last-child {
+	border: none;
+}
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: .6em;
+}
+footer li {
+	margin-bottom: 1em;
+}
+footer .col1 {
+	float: left;
+	width: 130px;
+}
+footer .col2 {
+	float: right;
+	width: 130px;
+}
