@@ -55,6 +55,34 @@ body {
 	width: 960px;
 	position: relative;
 	margin: 0 auto;
+	padding:0;
+	
+}
+/*Header styles*/
+.pageHeader h1{
+	width: 160px;
+	height: 150px;
+	text-indent: -9000em;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: black url(_images/ralogo.png) no-repeat;
+	z-index: 5;
+	margin: 0;
+}
+.pageHeader h1 a {
+	display: block;
+	width: 160px;
+	height: 150px;
+	margin: 0;
+}
+.blogHeader {
+	height: 192px;
+	background: url(_images/blog_header01.jpg) no-repeat;
+}
+header {
+	border-bottom:none;
+	margin-bottom: 0;
 }
 /*Nav styles*/
 .pageHeader nav {
