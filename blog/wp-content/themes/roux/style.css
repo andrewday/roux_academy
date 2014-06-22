@@ -219,6 +219,11 @@ footer#pageFooter {
 	background: rgb(249, 228, 130);
 	color: rgb(65, 64, 66);
 	padding: 32px 0 16px;
+	border-top:none;
+	text-align:left;
+	font-size:100%;
+	
+	
 }
 footer h3 {
 	font-family: Bitter, Georgia, Times, "Times New Roman", serif;
@@ -226,6 +231,7 @@ footer h3 {
 	font-size: 1em;
 	text-align: center;
 	margin-bottom: 1em;
+	font-weight:normal;
 }
 footer p {
 	font-size: .7em;
@@ -268,4 +274,59 @@ footer .col1 {
 footer .col2 {
 	float: right;
 	width: 130px;
+}
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;	
+	height: 0;
+	overflow:hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed{
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%
+	height: 100%;
+	
+}
+
+/* phone */
+@media screen and (max-width:320px) {
+	
+	
+}
+/* Tablet */
+@media screen and(min-width 321px)
+and (max-width:768px) {
+	body, #outerWrapper{
+		width: 768px;
+	}
+	.pageHeader li {
+		margin-right: 25px;
+	}
+	.pageHeader nav{
+		width: 600px;
+	}
+	#contentWrap {
+		background-position: -192px top;
+		width:768px;
+	}
+	#content {
+		width: 415px;
+	}
+	footer .col{
+		float:none;
+		border-right:none;
+		margin: 0 auto;
+		}
+	footer .p {
+		padding-top:20px;
+	}
+	
+	
+
+		
 }
