@@ -195,15 +195,22 @@ input#s{
 	background-color: rgb(249, 228, 130);
 	padding: .5em;
 	font-size: 1em;
-	width: 246px;
+	width: 226px !important;
 	margin-left: 1em;
 	margin-top: 1em;
 }
 #searchform 
 input[type="submit"] {
-	background:url(_images/search.png) no-repeat centre centre;
-	border:none;
-	width:35px;
-	height:35px;
-	cursor:pointer;
+	background-image: url(_images/search.png);
+	border: none;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	margin-top: -10px;
+	vertical-align: bottom;
+	
+}
+#searchform label {
+	display:none;
 }
