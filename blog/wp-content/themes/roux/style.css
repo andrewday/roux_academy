@@ -214,3 +214,58 @@ input[type="submit"] {
 #searchform label {
 	display:none;
 }
+/*footer styles	*/
+footer#pageFooter {
+	background: rgb(249, 228, 130);
+	color: rgb(65, 64, 66);
+	padding: 32px 0 16px;
+}
+footer h3 {
+	font-family: Bitter, Georgia, Times, "Times New Roman", serif;
+	text-transform: uppercase;
+	font-size: 1em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+footer p {
+	font-size: .7em;
+	text-align: center;
+	clear: both;
+}
+footer p a{
+	color: rgb(65, 64, 66);
+	text-decoration: underline;
+}
+footer ul a{
+	color: rgb(65, 64, 66);
+}
+footer a:hover {
+	color: rgb(2, 99, 174);
+}
+footer .col {
+	float: left;
+	width: 286px;
+	border-right: 2px solid rgba(191, 191, 191, .8);
+	margin-bottom: 1em;
+	padding-left: 32px;
+}
+footer .col:last-child {
+	border: none;
+}
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: .6em;
+}
+footer li {
+	margin-bottom: 1em;
+}
+footer .col1 {
+	float: left;
+	width: 130px;
+}
+footer .col2 {
+	float: right;
+	width: 130px;
+}
