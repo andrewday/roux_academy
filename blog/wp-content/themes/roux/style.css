@@ -158,3 +158,35 @@ article.post {
 	float: right;
 	width: 318px;
 }
+.widget-area h3{
+		color: white;
+	background: url(_images/diag_pattern.png);
+	line-height: 45px;
+	padding-left: .6em;
+	font-family: Bitter, Georgia, Times, "Times New Roman", serif;
+	font-size: 1.6em;
+	font-weight: 100;
+}
+.widget-area aside ul {
+	margin: 1em 1.2em 1em;
+	padding-left: 0.6em;
+}
+.widget-area aside ul li {
+	list-style: square;
+	margin-bottom: 0px;
+	color: #fff;
+}
+.widget-area.widget {
+	padding-bottom: 30px;
+}
+.widget-area aside a {
+	display: block;
+}
+.widget-area aside a:link, #blogPage aside a:visited {
+	background: #A858A3;
+	color: #FFF;
+}
+.widget-area aside a:hover, #blogPage aside a:active {
+	background: url(_images/diag_pattern.png);
+	color: #FBAE2C;
+}
