@@ -12,8 +12,10 @@ Version: 1.00
 	font-style: inherit;
 	font-size: 100%;
 	outline: 0;
-	padding: 0;
+	padding-right: 10px;
 	margin: 0;
+	float: none;
+	text-align: left;
 }
 body {
 	background: #CCC;	
@@ -61,7 +63,8 @@ nav.mainMenu ul li {
 	margin-bottom: 20px;	
 }
 div.entry, div.entry p {
-	margin: 10px 0;	
+	margin: 10px 0;
+	width: 600px;
 }
 .widget-area {
 	width: 220px;

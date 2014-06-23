@@ -1,8 +1,8 @@
 /*   
 Theme Name: Roux
-Theme URI: http://andrewday.co.uk
+Theme URI: http://lynda.com
 Description: A custom WordPress theme, built from the ground-up
-Author: Andy Day
+Author: Joseph Lowery
 Template: custom
 Version: 1.00
 */
@@ -60,6 +60,10 @@ body {
 	height: 192px;
 	background: url(_images/blog_header01.jpg) no-repeat;
 }
+.conferenceHeader {
+	height: 192px;
+	background: url(_images/blog_header02.jpg) no-repeat;
+}
 header {
 	border-bottom: none;
 	margin-bottom: 0;
@@ -73,7 +77,7 @@ header {
 	float: left;
 	width: 607px;
 	margin-top: 3px;
-	padding: 16px;
+	padding: 10px;
 }
 .widget-area {
 	float: right;
@@ -203,6 +207,7 @@ input#s {
 	padding: 0;
 	margin-top: -10px;
 	vertical-align: bottom;
+	float: right;
 }
 /* footer */
 footer#pageFooter {
@@ -239,10 +244,11 @@ footer .col {
 	width: 286px;
 	border-right: 2px solid rgba(191, 191, 191, .8);
 	margin-bottom: 1em;
-	padding-left: 32px;
+	padding-left: 12px;
 }
 footer .col:last-child {
 	border: none;
+	margin-left: px;
 }
 footer ul {
 	list-style: none;
@@ -311,9 +317,6 @@ footer .col2 {
 	}
 	#content h1 {
 		font-size: 1.4em;
-	}
-	#content h2 {
-		font-size: 1.2em;	
 	}
 	.widget-area {
 		background-color: rgba(168,88,163,1);
